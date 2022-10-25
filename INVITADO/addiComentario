@@ -1,0 +1,26 @@
+<?php
+?>
+    <h4>Comentarios</h4>
+    <form method="get" action="agregacomentario.php">
+        <textarea rows="4" cols="70" name="comentario"></textarea><<br>
+        <input type="hidden" name="idLugar" value="<?php echo $_GET["idLugar"]; ?>">
+        <input type="submit" value="comentar">
+    </form>	
+    <h4>ver comentarios actuales</h4>
+    <?php
+    $qry="Select * from comentarios where idLugar=" . $_GET["idLugar"];
+    $rs = mysqli_query($c,$qry);
+    if(mysqli_num_rows($rs)>0) //si hay comentarios
+    {
+        while($comentario = mysqli_fetch_object($rs))
+        {
+            echo "Fecha: " . $comentario->Fecha . "<br>";
+            echo "comentario: " . $comentario->comentario . "<br>";
+            echo "<hr>";
+        }
+    }
+    else //no hay comentarios
+    {
+        echo "Por el momento no hay comentarios.";
+    }
+    ?>

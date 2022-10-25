@@ -1,0 +1,19 @@
+Nombre : Angélica Massiel Vega Alvarez
+Nombre del proyecto : CULTU-MEX
+Fecha de inicio: 16/11/2021
+Fecha de entrega: 10/12/2021
+
+
+-----Administrador-----
+Usuario: Mssl
+Contraseña: uwu
+
+Usuario: Other
+Contraseña: unu
+-----General----------
+Usuario: Hgo
+Contraseña: owo
+
+
+Usuario BD: root
+Contraseña: ""
